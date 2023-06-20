@@ -1,0 +1,606 @@
+<!DOCTYPE HTML><html>
+<head>
+    <title>Xion Technologies</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+      .jumbotron{
+        color:white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/p2.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:80vh;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body .testimonial {
+  padding: 100px 0;
+}
+body .testimonial .row .tabs {
+  all: unset;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+body .testimonial .row .tabs li {
+  all: unset;
+  display: block;
+  position: relative;
+}
+body .testimonial .row .tabs li.active::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #71b85f;
+  border-radius: 50%;
+}
+body .testimonial .row .tabs li.active::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #71b85f;
+  border-radius: 50%;
+}
+body .testimonial .row .tabs li:nth-child(1) {
+  align-self: flex-end;
+}
+body .testimonial .row .tabs li:nth-child(1)::before {
+  left: 64%;
+  bottom: -50px;
+}
+body .testimonial .row .tabs li:nth-child(1)::after {
+  left: 97%;
+  bottom: -81px;
+}
+body .testimonial .row .tabs li:nth-child(1) figure img {
+  margin-left: auto;
+}
+body .testimonial .row .tabs li:nth-child(2) {
+  align-self: flex-start;
+}
+body .testimonial .row .tabs li:nth-child(2)::before {
+  right: -65px;
+  top: 50%;
+}
+body .testimonial .row .tabs li:nth-child(2)::after {
+  bottom: 101px;
+  border-radius: 50%;
+  right: -120px;
+}
+body .testimonial .row .tabs li:nth-child(2) figure img {
+  margin-right: auto;
+  max-width: 300px;
+  width: 100%;
+  margin-top: -50px;
+}
+body .testimonial .row .tabs li:nth-child(3) {
+  align-self: flex-end;
+}
+body .testimonial .row .tabs li:nth-child(3)::before {
+  right: -10px;
+  top: -66%;
+}
+body .testimonial .row .tabs li:nth-child(3)::after {
+  top: -130px;
+  border-radius: 50%;
+  right: -46px;
+}
+body .testimonial .row .tabs li:nth-child(3) figure img {
+  margin-left: auto;
+  margin-top: -50px;
+}
+body .testimonial .row .tabs li:nth-child(3):focus {
+  border: 10px solid red;
+}
+body .testimonial .row .tabs li figure {
+  position: relative;
+}
+body .testimonial .row .tabs li figure img {
+  display: block;
+}
+body .testimonial .row .tabs li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #dff9d9;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+body .testimonial .row .tabs li figure:hover::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+body .testimonial .row .tabs.carousel-indicators li.active figure::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+body .testimonial .row .carousel > h3 {
+  font-size: 20px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+body .testimonial .row .carousel h1 {
+  font-size: 40px;
+  line-height: 1.225;
+  margin-top: 23px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+body .testimonial .row .carousel .carousel-indicators {
+  all: unset;
+  padding-top: 43px;
+  display: flex;
+  list-style: none;
+}
+body .testimonial .row .carousel .carousel-indicators li {
+  background: #000;
+  background-clip: padding-box;
+  height: 2px;
+}
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
+  margin-top: 42px;
+}
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
+  font-size: 18px;
+  line-height: 1.72222;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+  color: #000;
+  font-weight: 700;
+  margin-top: 37px;
+  font-size: 20px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  body .testimonial .row .tabs {
+    margin-right: 25px;
+  }
+}
+    </style>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid ">
+<nav class="navbar navbar-expand-sm bg-white navbar-light center-content fixed-top">
+  <a class="navbar-brand" href="index.html">Xion</a>
+  <!-- <a class="navbar-brand" href="index.h">
+    <img src="#" alt="Logo" style="width:40px;">
+  </a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a class="nav-link dropbtn" data-toggle="dropdown" href="solutions.html">Solutions</a>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="smart_padocking.html">Smart Paddocking</a>
+            <a class="dropdown-item" href="smart_greenhouse.html">Smart GreenHousing</a>
+            <a class="dropdown-item" href="generator_monitoring.html">Generator Monitoring</a>
+            <a class="dropdown-item" href="container_monitoring.html">Cargo Monitoring</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a class="nav-link dropbtn" data-toggle="dropdown" href="products.html">Products</a>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="smart_padocking.html">Smart Paddocking</a>
+            <a class="dropdown-item" href="smart_greenhouse.html">Smart GreenHousing</a>
+            <a class="dropdown-item" href="generator_monitoring.html">Generator Monitoring</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a class="nav-link dropbtn" data-toggle="dropdown" href="solutions.html">Company</a>
+          <div class="dropdown-content">
+            <a class="dropdown-item" href="aboutus.html">AboutUs</a>
+            <a class="dropdown-item" href="careers.html">Careers</a>
+            <a class="dropdown-item" href="contactus.html">ContactUs</a>
+          </div>
+        </div>
+      </li>  
+      <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
+      <li class="nav-item "><a class="btn btn-success" href="#">GET A QUOTE</a></li>   
+    </ul>
+  </div>  
+</nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mt-4 pb-4">
+        <h1 class="display-6">Smart paddocking</h1>
+        <p class="text-strong"> Actively shaping the future of farming to be smarter and more efficient.</p>
+        <a href="#" class="btn btn-small btn-success">Get started</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12 bg-white pt-4 pb-4" id="">
+      <div class="row">
+        <div class="col-md-7 bg-white">
+          <h4 class="text-secondary">Smart paddocking</h4>
+          <p class="text-justify text-secondary font-small">
+            Our Smart Paddock integrates smart ear tags to monitor the health of livestock.
+            To meet our customer needs of a low cost ear tag that could be deployed in the thousands over large farm properties,our smart ear tags came out on top of all other technologies for its long distance capabilities.
+            Smart Paddock  deploys GPS tracking for cattle  with the use of our smart ear tags designed to survive the harshest environmental and operational conditions. You can track their livestock in real-time through your mobile phone or computer, get text alerts for stray/stolen or downed animals, review pasture usage maps, monitor the activity level of key animals and see how far the animals are walking each day to access food or water.
+            Our solution is being positioned as an ideal network solution as the tag can support and encourage  addition other operational Internet of Things (IoT) sensors to your farms to monitor water level, set up electric fences that utilise an existing radio network, among others.
+           </p>         
+        </div>
+        <div class="col-md-5 bg-white">
+            <h4 class="text-secondary">Features</h4>
+          <ul class="text-secondary">
+              <li><b>Animal health</b></li>
+              <li><b>Animal activity alert</b></li>
+              <p>Review pasture usage maps, monitor the activity level of key animals and see how far the animals are walking each day to access food or water</p>
+              <li><b>Animal location monitoring</b></li>
+              <p>Track their livestock in real-time through your mobile phone or computer</p>
+              <li><b>Animal security alerts</b></li>
+              <p>Get text alerts for stray/stolen or downed animals</p>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 bg-white pt-4 pb-4" id="">
+      <h2 class="text-center pt-2 text-secondary">Practical Applications</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries4.png" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Generator monitoring</h5>
+              <p class="text-justify text-secondary font-small">
+                You nolonger have to worry about physical monitoring of your generator with Xion remote generator monitoring. For standby power systems, faults can be detected and alerts sent to reduce incidents of failure to start.   
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries2.jpg" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Battery Monitoring</h5>
+              <p class="text-justify text-secondary font-small">
+                Get Improved your battery health,safety and security with Xion's remote battery monitoring solution. Faults can be detected and alerts sent to reduce incidents of failure and battery theft put into check
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white ">
+            <img src="./images/industries1.jpg" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Compressor monitoring</h5>
+              <p class="text-justify text-secondary font-small">
+                Schedule timely and relevant maintenance activities based 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries3.png" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-centeyr text-secondary">Computer monitoring</h5>
+              <p class="text-justif text-secondary font-small">
+                With Xion's remote computer monitoring, your posibility of recovering your stolen office machines is high.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <section class="testimonial">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 d-none d-lg-block">
+                  <ol class="carousel-indicators tabs">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-01-179x179.png" class="img-fluid" alt="">
+                          </figure>
+                      </li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-02-306x306.png" class="img-fluid" alt="">
+                          </figure>
+                      </li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                          <figure>
+                              <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-03-179x179.png" class="img-fluid" alt="">
+                          </figure>
+                      </li>
+                  </ol>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                  <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+                      <h3>WHAT OUR CLIENTS SAY</h3>
+                      <h1>TESTIMONIALS</h1>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="quote-wrapper">
+                                  <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                  <h3>Amos Kalyesubula</h3>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="quote-wrapper">
+                                  <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                  <h3>Cloe Ashley</h3>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="quote-wrapper">
+                                  <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                  <h3>Peter Lee</h3>
+                              </div>
+                          </div>
+                      </div>
+                      <ol class="carousel-indicators indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+     
+     <div class="col-md-12 bg-white pt-4 pb-4" id="">
+      <h2 class="text-center pt-2 text-secondary">Also from Xion</h2>
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries4.png" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Fleet Monitoring</h5>
+              <p class="text-justify text-secondary font-small">
+                You nolonger have to worry about physical monitoring of assests; Cut on your company expenses by using Xion Technologies remote asset  monitoring solutions. 
+              </p>
+              <a href="#" class="btn btn-small btn-success">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries2.jpg" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Feeds monitoring</h5>
+              <p class="text-justify text-secondary font-small">
+                Lets work together to your farming t the future; achieve better farm yields and cut opperation costs with our cutting edge agritech solutions.
+              </p>
+              <a href="#" class="btn btn-small btn-success">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white ">
+            <img src="./images/industries1.jpg" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-center text-secondary">Smart Homes & Facilities</h5>
+              <p class="text-justify text-secondary font-small">
+                Worry No more about the security of valuable assets as Xion Technologies has you covered with cutting edge solutions to monitor your assets. 
+              </p>
+              <a href="#" class="btn btn-small btn-success">Learn more</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-3 col-sm-4">
+          <div class="card bg-white">
+            <img src="./images/industries3.png" class="card-img-top" alt="avatar">
+            <div class="card-body">
+              <h5 class="text-centeyr text-secondary">Green house monitoring</h5>
+              <p class="text-justif text-secondary font-small">
+                Get more performance from your energy system by using our energy monitoring solutions for monitoring and safe gaurding of your  investment.
+              </p>
+              <a href="#" class="btn btn-small btn-success">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12  pt-4 pb-4 bg-light" id="contactus">
+      <h2 class="text-center text-success">Connect With US</h2>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h5 class="text-center text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor facilisis pellentesque.</h5>
+          <a href="#" class="btn btn-small btn-success mt-3">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="page-footer font-small bg-secondary pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left text-light">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Xeon Technologies</h5>
+        <p><i class="fas fa-map-marker-alt mr-1 pr-1"></i>Washington Plaza, Colton Rd</p>
+        <p><i class="fas fa-envelope mr-1 pr-1"></i>info@xiontechnolies.com</p>
+        <p><i class="fas fa-phone mr-1 pr-1"></i>+256 31 679359</p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Industries we serve</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="link text-white">Agritech</a>
+          </li>
+          <li>
+            <a href="#!"class="link text-white">Fleet Monitoring</a>
+          </li>
+          <li>
+            <a href="#!" class="link text-white">Data Analytics</a>
+          </li>
+          <li>
+            <a href="#!"class="link text-white">Asset Monitoring</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 text-center">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Quick Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="index.html" class="link text-white">Home</a>
+          </li>
+          <li>
+            <a href="products.html" class="link text-white">Solution</a>
+          </li>
+          <li>
+            <a href="solutions.html" class="link text-white">Products</a>
+          </li>
+          <li>
+            <a href="index.html"class="link text-white">Company</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 text-justify">
+        <h5 class="text-uppercase">Other Services</h5>
+        <ul class="list-unstlyed" style="display:unstyled">
+          <li>ECAD & MCAD</li>
+          <li>Product design</li>
+          <li>CCTV Camera Installation</li>
+          <li>Security System installation</li>
+          <li>Industrial Automation</li>
+          <li>Home Automation</li>
+        </ul>
+      
+      </div>
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-light text-center py-3 bg-dark">
+        <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="text-light mr-1 pr-1"><i class="fab fa-facebook-f fa-lg"></i></a> ©2023 Copyright |
+    <a href="index.html" class=""> XeonTechnologies</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</body>
+</html>
+<script>
+  $(document).ready(function(){
+  $(".testimonial .indicators li").click(function(){
+    var i = $(this).index();
+    var targetElement = $(".testimonial .tabs li");
+    targetElement.eq(i).addClass('active');
+    targetElement.not(targetElement[i]).removeClass('active');
+            });
+            $(".testimonial .tabs li").click(function(){
+                var targetElement = $(".testimonial .tabs li");
+                targetElement.addClass('active');
+                targetElement.not($(this)).removeClass('active');
+            });
+        });
+$(document).ready(function(){
+    $(".slider .swiper-pagination span").each(function(i){
+        $(this).text(i+1).prepend("0");
+    });
+});
+</script>

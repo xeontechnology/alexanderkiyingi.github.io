@@ -37,19 +37,40 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="solutions.html">Solutions</a>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="solutions.html">Solutions</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="smart_padocking.html">Smart Paddocking</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="smart_greenhouse.html">Smart GreenHousing</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="generator_monitoring.html">Generator Monitoring</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="container_monitoring.html">Cargo Monitoring</a>
+          </div>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="products.html">Products</a>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="products.html">Products</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="smart_padocking.html">Smart Paddocking</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="smart_greenhouse.html">Smart GreenHousing</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="generator_monitoring.html">Generator Monitoring</a>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Company</a>
-      </li>    
+      <li class="nav-item"><a class="nav-link" href="#">Industries</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Company</a></li> 
+      <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
+      <li class="nav-item "><a class="btn btn-success" href="#">GET A QUOTE</a></li>      
     </ul>
   </div>  
 </nav>
@@ -221,16 +242,16 @@
 </div>
 
 
-<footer class="page-footer font-small bg-white pt-4">
+<footer class="page-footer font-small bg-secondary pt-4">
 
   <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left text-dark">
+  <div class="container-fluid text-center text-md-left text-light">
 
     <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-3 mt-md-0 mt-3">
 
         <!-- Content -->
         <h5 class="text-uppercase">Xion Technologies</h5>
@@ -252,16 +273,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Agritech</a>
+            <a href="#!" class="link text-white">Agritech</a>
           </li>
           <li>
-            <a href="#!">Fleet Monitoring</a>
+            <a href="#!"class="link text-white">Fleet Monitoring</a>
           </li>
           <li>
-            <a href="#!">Data Analytics</a>
+            <a href="#!" class="link text-white">Data Analytics</a>
           </li>
           <li>
-            <a href="#!">Asset Monitoring</a>
+            <a href="#!"class="link text-white">Asset Monitoring</a>
           </li>
         </ul>
 
@@ -269,28 +290,36 @@
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
+      <div class="col-md-3 mb-md-0 mb-3 text-center">
 
         <!-- Links -->
         <h5 class="text-uppercase">Site Map</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Home</a>
+            <a href="index.html" class="link text-white">Home</a>
           </li>
           <li>
-            <a href="solutions.html">Solution</a>
+            <a href="products.html" class="link text-white">Solution</a>
           </li>
           <li>
-            <a href="products.html">Products</a>
+            <a href="solutions.html" class="link text-white">Products</a>
           </li>
           <li>
-            <a href="#!">Company</a>
+            <a href="#!"class="link text-white">Company</a>
           </li>
         </ul>
 
       </div>
       <!-- Grid column -->
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3 text-center">
+        <h5 class="text text-white"> Follow Us</h5>
+        <a href="#" class=""><i class=""></i>Instagram</a>
+        <a href="#" class=""><i class=""></i>Twitter</a>
+        <a href="#" class=""><i class=""></i>Facebook</a>
+
+      </div>
 
     </div>
     <!-- Grid row -->
@@ -298,7 +327,7 @@
   </div>
   <!-- Footer Links -->
 
-   <!-- Copyright -->
+  <!-- Copyright -->
   <div class="footer-copyright text-light text-center py-3 bg-dark">©2023 Copyright |
     <a href="index.html" class=""> XionTechnologies</a>
   </div>
