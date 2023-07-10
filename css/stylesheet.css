@@ -5,11 +5,16 @@
     box-sizing: border-box;
   }
 
+
   body {
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
     font-family: "Poppins", sans-serif;
+  }
+
+  body, html {
+    height: 100%;
   }
 
   ul {
@@ -255,3 +260,24 @@
   #topBtn:hover {
     background-color: grey; /* Add a dark-grey background on hover */
   }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../images/img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
